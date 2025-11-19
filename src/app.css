@@ -1,0 +1,113 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+body {
+		background-color: rgb(8, 29, 34);
+		color: white;
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+        font-style: normal;
+        align-items: center;
+        justify-content: center;
+    }
+.header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
+.thumbnail {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.8);
+        object-fit: cover;
+    }
+.home-button {
+		background: none;
+		color: white;
+        cursor: pointer;
+		font-size: 16px;
+        width: 100%;
+		font-weight: bold;
+		border-radius: 12px;
+		box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.8);
+	
+	}
+.home-button:hover {
+		opacity: 0.8;
+	}
+.follow-button {
+        color: rgb(245, 245, 245);
+        background-color: royalblue ;
+        border-width: 2px;
+        cursor: pointer;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 4px;
+
+        box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.8);
+    }
+.image-container:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+.image-caption {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 8px;
+    }
+.container {
+        text-align: center;
+        display: flex
+        flex-direction: row;
+    }
+
+.contact-wrapper {
+    max-width: 80%;
+    width: 90%; 
+    padding: 5%;
+    background-color: rgb(8, 29, 34);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Stile per gli input e la textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    /* Fa in modo che gli input occupino tutta la larghezza del form */
+    width: 100%;
+    padding: 5%;
+    border: 2% solid #ccc;
+    border-radius: 2%;
+    box-sizing: border-box; 
+}
+
+/* Stile per il bottone */
+.contact-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Fa in modo che il bottone sia largo come gli input */
+    width: 100%; 
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
